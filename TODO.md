@@ -2,7 +2,7 @@
 
 RAT name => `blackRAT`
 
-communication port => `528`
+communication port => `1528`
 
 ----
 
